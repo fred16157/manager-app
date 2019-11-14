@@ -15,6 +15,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <Button
+                android:id="@+id/rentBtn_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="대출"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/logView" />
+
             <ImageView
                 android:id="@+id/ThumbView"
                 android:layout_width="0dp"
@@ -133,6 +143,17 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/logLabel" />
+
+            <Button
+                android:id="@+id/returnBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:enabled="false"
+                android:text="반납 신청"
+                app:layout_constraintEnd_toStartOf="@+id/rentBtn_"
+                app:layout_constraintTop_toBottomOf="@+id/logView" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

@@ -22,14 +22,17 @@ import java.net.URL;
 import java.util.ArrayList;
 
 class LogItem implements Serializable {
+    private String id;
     private String rentalAt;
     private String returnAt;
     private String userId;
-    public LogItem(String rentalAt, String returnAt, String userId) {
+    public LogItem(String id, String rentalAt, String returnAt, String userId) {
+        this.id = id;
         this.returnAt = returnAt;
         this.rentalAt = rentalAt;
         this.userId = userId;
     }
+    public String getId() { return id; }
 
     public String getRentalAt() {
         return rentalAt;
